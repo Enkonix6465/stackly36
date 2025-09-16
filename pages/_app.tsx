@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { LangProvider, useLang } from "../src/components/LangContext";
 import { useEffect } from "react";
+import { LangProvider, useLang } from "../src/components/LangContext";
 
 function InnerApp({ Component, pageProps }: AppProps) {
   const { lang } = useLang();

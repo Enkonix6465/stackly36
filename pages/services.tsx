@@ -3,23 +3,21 @@ import Headder from "@/components/Headder";
 import Head from "next/head";
 import Link from "next/link";
 
-import React from "react";
-import { useLang } from "../src/components/LangContext";
 import {
   Building2,
-  Scale,
-  Users,
+  Gavel,
+  Handshake,
   Home,
   Lightbulb,
-  Gavel,
-  Star,
-  Handshake,
-  DownloadCloudIcon,
+  Scale,
+  ScrollText,
   Search,
   Settings,
+  Star,
   Trophy,
-  ScrollText,
+  Users,
 } from "lucide-react";
+import { useLang } from "../src/components/LangContext";
 
 type Props = {};
 
@@ -44,7 +42,6 @@ const services = (props: Props) => {
             loop
             muted
             playsInline
-            poster="/law-hero-poster.jpg"
           />
           <div className="absolute inset-0 bg-black/60 z-10" />
           <div className="relative z-20 text-center text-white px-4">
@@ -74,7 +71,7 @@ const services = (props: Props) => {
                 name: t("litigation"),
                 desc: t("services_litigation_desc"),
                 icon: <Scale size={40} />,
-                href: "/litigation-dispute",
+                href: "/litigation-dispute-resolution",
               },
               {
                 name: t("family_law"),

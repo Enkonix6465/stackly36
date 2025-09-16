@@ -1,8 +1,7 @@
 import Footer from "@/components/Footer";
 import Headder from "@/components/Headder";
-import Head from "next/head";
-import React from "react";
 import { useLang } from "@/components/LangContext";
+import Head from "next/head";
 
 const Blog = () => {
   const { t } = useLang();

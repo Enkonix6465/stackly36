@@ -1,26 +1,25 @@
 import Footer from "@/components/Footer";
 import Headder from "@/components/Headder";
+import {
+  Calendar,
+  FileText,
+  Handshake,
+  HeartHandshake,
+  HelpingHand,
+  Landmark,
+  Laptop2,
+  Medal,
+  Mic,
+  PhoneCall,
+  Puzzle,
+  Rocket,
+  Star,
+  Trophy,
+} from "lucide-react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { useLang } from "../src/components/LangContext";
-import {
-  Landmark,
-  Rocket,
-  Handshake,
-  PhoneCall,
-  Puzzle,
-  Trophy,
-  Calendar,
-  Laptop2,
-  Star,
-  Medal,
-  HelpingHand,
-  FileText,
-  Mic,
-  HeartHandshake,
-} from "lucide-react";
 
 const home2 = () => {
   const { t } = useLang();
@@ -146,16 +145,18 @@ const home2 = () => {
                       icon: <Trophy size={24} />,
                     },
                   ].map((item, idx) => (
-                    <li key={item.step} className="    relative">
-                      <span className=" absolute -left-15 top-0 w-13 h-13 rounded-full bg-blue-700 dark:bg-blue-900 flex items-center justify-center text-xl text-white shadow-lg border-4 border-white dark:border-gray-900">
+                    <li key={item.step} className=" flex flex-col     relative">
+                      <span className=" absolute md:-left-15   top-0 w-13 h-13 rounded-full bg-blue-700 dark:bg-blue-900 flex items-center justify-center text-2xl text-white shadow-lg border-4 border-white dark:border-gray-900">
                         {item.icon}
                       </span>
-                      <h4 className="font-bold text-blue-800 dark:text-blue-100 text-lg mb-1">
-                        {item.step}
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-base">
-                        {item.desc}
-                      </p>
+                      <div className="flex flex-col  not-md:ml-16 md:ml-8  ">
+                        <h4 className="font-bold text-blue-800 dark:text-blue-100 text-lg mb-1">
+                          {item.step}
+                        </h4>
+                        <p className="text-gray-600 dark:text-gray-300 text-base">
+                          {item.desc}
+                        </p>
+                      </div>
                     </li>
                   ))}
                 </ol>

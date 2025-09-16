@@ -1,7 +1,6 @@
-import React from "react";
-import Head from "next/head";
-import Headder from "@/components/Headder";
 import Footer from "@/components/Footer";
+import Headder from "@/components/Headder";
+import Head from "next/head";
 import { useLang } from "../src/components/LangContext";
 
 const ComplianceInModernFirms = () => {

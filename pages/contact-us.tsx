@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { useLang } from "../src/components/LangContext";
-import Headder from "../src/components/Headder";
-import Footer from "../src/components/Footer";
 import React from "react";
+import Footer from "../src/components/Footer";
+import Headder from "../src/components/Headder";
+import { useLang } from "../src/components/LangContext";
 
 const ContactUs = () => {
   const { t } = useLang();
